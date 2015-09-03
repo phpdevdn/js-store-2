@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<title>light box</title>
+	<link rel="stylesheet" href="style.css">
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
+	<script src="lightbox.js"></script>
+		<script>
+	var light=function(args){
+	$('.imgBlk').lightbox(args);
+};
+ 	var test ="ok";
+$(document).ready(function(){
+ var arg={
+		'block':'block',
+		'url':'image/image.jpg',
+		'title':'title',
+		'content':'content'
+	}
+
+});
+	</script>
+</head>
+<body>
+	<div class="boxBlk">
+		<div class="imgBlk">
+			<img src="" alt="">
+			<div class="conBox"></div>
+		</div>
+		<a href="#" class="arrow lft-arrow">&larr;</a>
+		<a href="#" class="arrow rgt-arrow">&rarr;</a>
+	</div>
+</body>
+</html>
